@@ -40,7 +40,7 @@ func main() {
 
 		w := widget.NewSheet(
 			widget.NewUniform(theme.StaticColor(color.Black),
-				widget.NewImage(src, src.Bounds())))
+				NewImageViewer(src, src.Bounds())))
 		if err := widget.RunWindow(s, w, opts); err != nil {
 			log.Fatal(err)
 		}
